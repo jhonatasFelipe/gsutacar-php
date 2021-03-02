@@ -1,0 +1,144 @@
+
+.parte-cima-detalhe{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.galleria{
+    width: 50%;
+    height:520px;
+}
+
+.info-car{
+    margin:10px;
+    margin-left: 40px;
+    max-width: 50%;
+    word-break: break-word;
+ h3{
+     color:black;
+     margin-top: 10px;
+     font-size: 13pt;
+ }
+
+ p{
+     text-indent: 5px;
+     margin: 10px 0;
+ }
+    span{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+.preco{
+    font-family: $fonte-padrao-1;
+    color: $vermelho;
+    font-size: 25pt;
+    font-weight: bold;
+}
+
+.botao-interesse{
+    background-color: $azul;
+    color:#fff;
+    font-size: 15pt;
+    font-weight: bold;
+    padding: 10px;
+    border:none;
+    margin-top: 15px;
+}
+
+.botao-voltar{
+    @extend .botao-interesse;
+    background-color: $cinza;
+}
+
+.p-sugestao{
+    align-self: flex-start;
+    font-size: 15pt;
+    color:black;
+    font-weight: bold;
+}
+
+.interesse{
+    display: flex;
+    justify-content: space-around;
+    .imagem-interesse{
+        width: 40vw;
+    }
+}
+
+.acessorio{
+    color: white;
+    background-color: $cinza;
+    margin:5px !important;
+    padding: 5px 10px;
+    border-radius: 10px;
+    text-align: center;
+    text-indent: 0 !important;
+    font-family: $fonte-padrao-1;
+
+}
+
+.alerta{
+    width: 30vw;
+    height: auto;
+    position:fixed;
+    top:0;
+    left: 0;
+    background-color: #1bd30b;
+}
+
+
+
+@media screen  and (min-width: 400px) and (max-width:900px){
+    .parte-cima-detalhe{
+        flex-direction: column;
+        align-items: center;
+
+        .galleria{
+            width: 100%;
+        }
+
+        .info-car{
+            margin: 5px;
+            max-width: 100%;
+            .preco{
+                font-size: 30pt;
+            }
+        }
+    }
+}
+
+@media screen  and (min-width: 300px) and (max-width:399px){
+    .parte-cima-detalhe{
+        flex-direction: column;
+        align-items: center;
+
+        .galleria{
+            height: 300px !important;
+            width: 100%;
+        }
+
+        .info-car{
+            max-width: 100%;
+            margin: 5px;
+            .preco{
+                font-size: 30pt;
+            }
+        }
+    }
+
+    .interesse{
+        flex-direction: column;
+        align-items: center;
+
+        .imagem-interesse{
+            width: 80vw;
+        }
+    }
+
+}
+

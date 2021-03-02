@@ -1,0 +1,5 @@
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^gustacar.com.br$ [NC,OR]
+RewriteCond %{HTTP_HOST} ^www.gustacar.com.br$
+RewriteCond %{REQUEST_URI} !pasta/
+RewriteRule (.*) /public/$1 [L]

@@ -1,0 +1,29 @@
+.aviso {
+    width:40%;
+    margin:10px auto;
+    padding: 20px;
+    border-radius: 10px;
+    font-family: $fonte-padrao-1;
+    font-size: 12pt;
+}
+
+.botao-fecha-aviso{
+    background-color: transparent;
+    border: none;
+    color:#999;
+    font-size: 18pt;
+    position: absolute;
+    right: -40px;
+    top: 5px;
+}
+
+
+.sucess{
+    background-color: lightgreen ;
+    color:darkgreen;
+}
+
+.warn{
+    background-color: lightpink;
+    color: #9b1e31;
+}

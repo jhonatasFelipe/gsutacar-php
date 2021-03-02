@@ -1,0 +1,13 @@
+.interno-carros{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+@media screen and (min-width:300px) and (max-width:600px ) {
+    .interno-carros{
+        flex-direction: column;
+
+    }
+}

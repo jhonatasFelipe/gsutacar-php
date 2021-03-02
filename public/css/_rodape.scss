@@ -1,0 +1,102 @@
+footer{
+    background-color: $cinza;
+    padding: 20px 0px;
+    display: flex;
+
+    .container-rodape{
+        @extend .container;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+
+        div{
+            span {
+               @extend .paragrafo-1;
+               margin: 5px;
+               font-size: 15pt;
+            }
+
+            p{
+                @extend .paragrafo-1;
+                font-size: 13pt;
+                margin: 5px;
+            }
+
+        }
+        nav{
+            display: flex;
+            flex-direction: column;
+            a{
+                @extend .paragrafo-1;
+                font-size: 15px;
+                margin: 8px;
+                align-self: flex-start;
+                color:white !important;
+            }
+        }
+        .div1{
+            display: flex;
+            flex-direction: column;
+
+            &>*{
+                margin: 20px 0;
+            }
+            .parceiros{
+                width:100%;
+                display: flex;
+                justify-content: space-evenly;
+                img{
+                    width: 35px;
+                }
+            }
+
+            .redes-sociais{
+                width:100%;
+                display: flex;
+                justify-content: space-evenly;
+                img{
+                    width: 35px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 300px) and (max-width: 800px) {
+    .container-rodape{
+        flex-direction: column-reverse !important;
+        align-items: center !important;
+        justify-content: center !important;
+
+        .div3{
+           p{
+               text-align: center;
+           }
+        }
+
+        nav{
+           a{
+               align-self: center !important;
+           }
+        }
+        .div1{
+            img{
+                width: 80%;
+                margin: 0 auto;
+            }
+
+            .span{
+                justify-content: space-around !important;
+                img{
+                    margin: 0 !important;
+                }
+            }
+        }
+
+    }
+}
+
+@media(min-width: 300px)and (max-width: 450px){
+    font-size: 10px;
+}
+

@@ -1,0 +1,41 @@
+
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height:100%;
+
+    header{
+        font-family: $fonte-padrao-1;
+    }
+}
+.linkmenu{
+    text-decoration: none;
+    color:black;
+    font-family: $fonte-padrao-1;
+    font-weight: bold;
+    font-size: 12pt;
+    padding: 5px;
+    transition: font-size 0.5s;
+
+}
+
+.linkmenu:hover{
+    background-color: $azul;
+    color: white;
+    border-radius: 3px;
+    text-decoration-line: none;
+    font-size: 14pt;
+}
+
+
+.active-menu{
+    background-color: $azul;
+    color: white;
+    border-radius: 3px;
+}
+
+
+
+

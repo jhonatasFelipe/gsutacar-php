@@ -1,0 +1,90 @@
+/*variebles*/
+$cinza: #333;
+/*$azul: */
+$azul: #2f2ffd;
+$vermelho: #dd0000;
+$verde: rgb(27, 211, 11);
+$tamanho-total: 1360px;
+$min-width: 320px;
+$caminho: '../Fonts/Asap/';
+$fonte-padrao-1 :'Asap Regular';
+
+
+.paragrafo-1{
+    color:#ffffff;
+    font-weight: bold;
+    text-shadow:1px 1px black;
+    font-family: $fonte-padrao-1;
+ }
+
+ .paragrafo-2{
+    color:$cinza;
+    text-align: justify;
+    font-family: $fonte-padrao-1;
+    font-size: 12pt;
+ }
+
+ .input-defalt{
+     padding:3px;
+     font-size: 12pt;
+     border-radius: 5px;
+     font-family: $fonte-padrao-1;
+ }
+
+ .input-1{
+     @extend .input-defalt;
+     width: 100%;
+ }
+
+ .input-2{
+    @extend .input-defalt;
+     width: 60%;
+ }
+
+ .input-3{
+    @extend .input-defalt;
+     width: 30%;
+ }
+
+ .container{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     max-width: $tamanho-total;
+     min-width: $min-width;
+     padding: 0.3%;
+     width: 99.7%;
+     margin: 0 auto;
+ }
+
+.buton-acao{
+    background-color: transparent;
+    border:none;
+    font-size: 20pt;
+    padding: 5px;
+}
+
+/*fonts*/
+@import "../Fonts/Asap/style";
+/*imports*/
+@import 'reset';
+@import 'animation';
+@import 'cabecalho';
+@import 'menu';
+@import 'rodape';
+@import 'produto';
+@import 'vitrine';
+@import 'pesquisa';
+@import 'home';
+@import 'detalhe-carro';
+@import 'cabecalho-interno';
+@import 'modal';
+@import 'form-interesse';
+@import 'pesquisacompleta';
+@import 'carro';
+@import 'share';
+@import 'aviso';
+@import 'nossa-empresa';
+@import 'financiamento';
+@import 'contato';

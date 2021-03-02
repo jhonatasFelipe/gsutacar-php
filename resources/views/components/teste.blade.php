@@ -1,0 +1,4 @@
+<div>
+    {{ $slot }}
+    {{ $nome }}
+</div>

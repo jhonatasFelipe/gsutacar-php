@@ -1,0 +1,31 @@
+.escondido-cima {
+  position: fixed;
+  opacity: 0;
+  transition: left 0.5s, top 1s, opacity 0.5s;
+  top: -100%;
+  z-index: 99; }
+
+.escondido-esquerda {
+  position: fixed;
+  opacity: 0;
+  transition: left 0.5s, top 1s, opacity 0.5s;
+  left: -100%;
+  z-index: 99; }
+
+.escondido-direita {
+  position: relative;
+  opacity: 0;
+  transition: left 0.5s, opacity 0.5s;
+  right: -100%;
+  z-index: 99; }
+
+.entrar-tela-cima {
+  top: 0;
+  opacity: 1; }
+
+.entrar-tela {
+  left: 0 !important;
+  top: 0;
+  opacity: 1 !important; }
+
+/*# sourceMappingURL=animation.css.map */

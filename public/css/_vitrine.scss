@@ -1,0 +1,17 @@
+.vitrine{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width:80%
+}
+.vitrine-home{
+    width: 100% !important;
+}
+
+@media screen and (min-width:300px) and (max-width:600px ) {
+    .vitrine{
+        width: 100%;
+        justify-content: center;
+
+    }
+}

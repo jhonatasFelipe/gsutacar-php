@@ -1,0 +1,107 @@
+.divisao {
+    display: flex;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.form-contato {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+}
+
+.form-contato span {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 80%;
+}
+
+.form-contato input,
+.form-contato textarea {
+    width: 96%;
+    background-color: #bbb;
+    border: none;
+    border-radius: 4px;
+    padding: 1%;
+    font-family: Asap Regular;
+    font-size: 12pt;
+    color: white;
+    margin: 5px;
+    
+}
+
+.form-contato textarea {
+    height: 150px;
+}
+
+.form-contato label {
+    display: block;
+    color: #999;
+    font-family: 'Asap Regular';
+    font-size: 12pt;
+    text-align: left;
+}
+
+.button-contato {
+    background-color: rgb(56, 179, 4);
+    border-radius: 5px;
+    font-family: Asap Bold;
+    font-size: 20px;
+    color: white;
+    align-self: flex-end;
+    width: 30%;
+    margin: 5px;
+    border: none;
+    padding: 1%;
+}
+
+.mapa {
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.titulo-contato {
+    font-family: Asap Bold;
+    font-size: 16pt;
+    margin:40px 0;
+}
+
+@media screen and (max-width: 800px){
+
+    .divisao{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mapa{
+        width: 90%;
+        height:300px
+
+    }
+
+    .form-contato{
+        width: 90%;
+
+        span{
+            flex-direction: column;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .button-contato{
+            align-self: initial;
+            width: 100%;
+        }
+    }
+    .titulo-contato{
+        font-size: 12pt;
+        width: 90%;
+    }
+
+}

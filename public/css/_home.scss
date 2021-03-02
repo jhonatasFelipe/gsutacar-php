@@ -1,0 +1,10 @@
+
+.home-superior{
+    @extend .container;  
+    flex-direction: row;  
+    justify-content: space-between;
+    .slide{
+        width:73%;
+        max-width: 100%;
+    }
+}

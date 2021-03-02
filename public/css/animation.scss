@@ -1,0 +1,49 @@
+@mixin escondido(){
+    position: relative;
+    opacity: 0;
+    transition: left 0.5s, opacity 0.5s;
+}
+
+@mixin escondido-modal(){
+    position: fixed;
+    opacity: 0;
+    transition: left 0.5s, top 1s, opacity 0.5s;
+}
+
+@mixin escondido-esquerda(){
+    @include escondido-modal;
+    left: -100%;
+    z-index: 99 ;
+}
+
+@mixin escondido-cima(){
+    @include escondido-modal;
+    top: -100%;
+    z-index:99;
+}
+
+.escondido-cima{
+    @include escondido-cima;
+}
+
+.escondido-esquerda{
+    @include escondido-esquerda;
+}
+
+.escondido-direita{
+    @include escondido;
+    right: -100%;
+    z-index: 99 ;
+}
+.entrar-tela-cima{
+    top: 0;
+    opacity: 1;
+}
+
+.entrar-tela{
+    left: 0 !important;
+    top:0;
+    opacity: 1 !important;
+
+}
+
