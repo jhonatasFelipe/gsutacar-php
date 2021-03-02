@@ -21,9 +21,9 @@ class HomeController extends Controller
        $motores = $motorRepo->listAll();
 
        $metas = [
-           "title" => "teste de meta title",
+           "title" => "galo de meta title",
             "description" =>"teste de description",
-            "type" => "company",
+            "type" => "Website",
             "image" => asset('img/logogustacar.png'),
             "url"=> url()->current(),
             "name" =>"Gustacar Revendora de veiculos",
